@@ -4,7 +4,7 @@ This repository contains templates to easily create new screens in an applicatio
 
 #### Installation
 
-Download the contents of this repository, and copy the contents of the *ArchitectureScreenTemplate* folder to the following path:
+Download the contents of this repository, and copy the *ArchitectureScreenTemplate* folder to the following path:
 
 ```
 <YOUR_INSTALL_PATH>\Android Studio\plugins\android\lib\templates\other
@@ -22,7 +22,7 @@ Right click either on the `ui` package or any nested package inside the `ui` pac
 
 ![](/images/create_new.PNG)
 
-In the wizard that appears, enter the name of the screen you wish to create (without any suffixes, no "`Fragment`", etc.), as well as the desired ViewState type for this screen.
+In the wizard that appears, enter the name of the screen you wish to create in UpperCamelCase (but without any suffixes, no "`Fragment`", etc.), as well as the desired ViewState type for this screen (more info [here](https://gitlab.autsoft.hu/android-architecture/android-arch-kotlin#view-states)).
 
 ![](/images/wizard.PNG)
 
