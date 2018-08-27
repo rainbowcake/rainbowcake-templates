@@ -21,6 +21,13 @@
         <option id="sealed">Sealed class</option>
     </parameter>
 
+    <parameter
+            id="fragmentArgument"
+            name="Include argument"
+            type="boolean"
+            default="false"
+            help="Adds a dummy argument and a newInstance factory method for your Fragment."/>
+
     <globals file="globals.xml.ftl"/>
     <execute file="recipe.xml.ftl"/>
 
