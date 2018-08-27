@@ -49,8 +49,8 @@ class ${screenName}Fragment : BaseFragment<${screenName}ViewState, ${screenName}
 
         <#if fragmentArgument == true>
         initArguments()
-        </#if>
 
+        </#if>
         // TODO Setup views
     }
 
