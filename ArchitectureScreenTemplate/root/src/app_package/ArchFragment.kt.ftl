@@ -4,12 +4,12 @@
 
 import android.os.Bundle
 import android.view.View
+import hu.autsoft.architecture.base.BaseFragment
+import hu.autsoft.architecture.base.getViewModelFromFactory
+import hu.autsoft.architecture.extensions.extensions.requireLong
+import hu.autsoft.architecture.extensions.extensions.requireArguments
+import hu.autsoft.architecture.extensions.extensions.withArgs
 import ${rootPackage}.R
-import ${rootPackage}.base.BaseFragment
-import ${rootPackage}.base.getViewModelFromFactory
-import ${rootPackage}.util.extensions.getLongOrThrow
-import ${rootPackage}.util.extensions.requireArguments
-import ${rootPackage}.util.extensions.withArgs
 
 <#if fragmentArgument == true>
 class ${screenName}Fragment : BaseFragment<${screenName}ViewState, ${screenName}ViewModel> {
@@ -40,7 +40,7 @@ class ${screenName}Fragment : BaseFragment<${screenName}ViewState, ${screenName}
     private var someId: Long = 0
 
     private fun initArguments() {
-        someId = requireArguments().getLongOrThrow(SOME_ID)
+        someId = requireArguments().requireLong(SOME_ID)
     }
     //endregion
     </#if>
