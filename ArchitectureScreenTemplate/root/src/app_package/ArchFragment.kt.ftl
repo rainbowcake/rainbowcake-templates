@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.view.View
 import hu.autsoft.architecture.base.BaseFragment
 import hu.autsoft.architecture.base.getViewModelFromFactory
-import hu.autsoft.architecture.extensions.extensions.requireLong
-import hu.autsoft.architecture.extensions.extensions.requireArguments
-import hu.autsoft.architecture.extensions.extensions.withArgs
+import hu.autsoft.architecture.extensions.requireLong
+import hu.autsoft.architecture.extensions.requireArguments
+import hu.autsoft.architecture.extensions.withArgs
 import ${rootPackage}.R
 
 <#if fragmentArgument == true>
