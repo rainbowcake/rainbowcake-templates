@@ -4,12 +4,12 @@
 
 import android.os.Bundle
 import android.view.View
-import hu.autsoft.architecture.base.BaseFragment
-import hu.autsoft.architecture.base.getViewModelFromFactory
+import hu.autsoft.rainbowcake.base.BaseFragment
+import hu.autsoft.rainbowcake.base.getViewModelFromFactory
 <#if fragmentArgument == true>
-import hu.autsoft.architecture.extensions.requireLong
-import hu.autsoft.architecture.extensions.requireArguments
-import hu.autsoft.architecture.extensions.withArgs
+import hu.autsoft.rainbowcake.extensions.requireLong
+import hu.autsoft.rainbowcake.extensions.requireArguments
+import hu.autsoft.rainbowcake.extensions.withArgs
 </#if>
 import ${rootPackage}.R
 

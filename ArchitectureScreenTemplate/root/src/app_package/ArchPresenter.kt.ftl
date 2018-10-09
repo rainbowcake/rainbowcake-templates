@@ -2,7 +2,7 @@
     package ${packageName}.${screenName?lower_case}
 </#if>
 
-import hu.autsoft.architecture.withIOContext
+import hu.autsoft.rainbowcake.withIOContext
 import javax.inject.Inject
 
 class ${screenName}Presenter @Inject constructor() {
