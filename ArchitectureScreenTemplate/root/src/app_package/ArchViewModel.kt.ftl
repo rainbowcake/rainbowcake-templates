@@ -2,7 +2,7 @@
     package ${packageName}.${screenName?lower_case}
 </#if>
 
-import hu.autsoft.architecture.base.JobViewModel
+import hu.autsoft.rainbowcake.base.JobViewModel
 import javax.inject.Inject
 
 class ${screenName}ViewModel @Inject constructor(
