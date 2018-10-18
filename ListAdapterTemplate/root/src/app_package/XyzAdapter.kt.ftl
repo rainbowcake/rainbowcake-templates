@@ -8,9 +8,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ${rootPackage}.R
+<#if presenterName?has_content>
+import ${packageName}.${presenterName}.${modelName}
+</#if>
+import ${packageName}.${modelName}Adapter.${modelName}ViewHolder
 import kotlinx.android.synthetic.main.row_${camelCaseToUnderscore(modelName)}.*
 
-class ${modelName}Adapter : ListAdapter<${modelName}, ${modelName}Adapter.${modelName}ViewHolder>(${modelName}Comparator) {
+class ${modelName}Adapter : ListAdapter<${modelName}, ${modelName}ViewHolder>(${modelName}Comparator) {
     <#if withClickListener == true>
 
     var listener: Listener? = null

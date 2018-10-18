@@ -3,6 +3,9 @@
 </#if>
 
 import android.support.v7.util.DiffUtil
+<#if presenterName?has_content>
+import ${packageName}.${presenterName}.${modelName}
+</#if>
 
 object ${modelName}Comparator : DiffUtil.ItemCallback<${modelName}>() {
 

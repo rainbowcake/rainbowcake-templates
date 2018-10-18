@@ -19,6 +19,14 @@
             default="false"
             help="Adds a click listener to the itemView plus defines an interface for it."/>
 
+    <parameter
+            id="presenterName"
+            name="Presenter"
+            type="string"
+            default=""
+            constraints="class"
+            help="The name of the presenter that the model class is nested in. If provided, the model will be imported automatically."/>
+
     <globals file="globals.xml.ftl"/>
     <execute file="recipe.xml.ftl"/>
 
