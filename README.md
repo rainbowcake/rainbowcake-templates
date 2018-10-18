@@ -1,10 +1,14 @@
-### Architecture templates
+# Architecture templates
 
-This repository contains templates to easily create new screens in an application.
+This repository contains templates to generate boilerplate code for an Android application.
+
+### Screen template
+
+Creates a new screen: Fragment, ViewModel, View state, and Presenter.
 
 #### Installation
 
-Download the contents of this repository, and copy the *ArchitectureScreenTemplate* folder to the following path:
+Download the contents of this repository, and copy the `ArchitectureScreenTemplate` folder to the following path:
 
 ```
 <YOUR_INSTALL_PATH>\Android Studio\plugins\android\lib\templates\other
@@ -32,3 +36,7 @@ In the wizard that appears, enter:
 Click `Finish` to create the screen, and add the created files to Git:
 
 ![](/images/result.PNG)
+
+### ListAdapter template
+
+Generates a ListAdapter implementation plus a DiffUtil.Callback stub. Installation and usage same as above, found in the `ListAdapterTemplate` folder of this repository.
