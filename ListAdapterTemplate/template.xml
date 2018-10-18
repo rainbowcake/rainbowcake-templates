@@ -1,0 +1,25 @@
+<template format="4"
+          revision="1"
+          name="ListAdapter implementation"
+          description="Creates the required classes for a basic ListAdapter">
+
+    <category value="Other"/>
+
+    <parameter id="modelName"
+               name="Model name"
+               type="string"
+               constraints="class|unique|nonempty"
+               default="Example"
+               help="The name of the model element in the list, for example User, Category, or Record"/>
+
+    <parameter
+            id="withClickListener"
+            name="Include click listener"
+            type="boolean"
+            default="false"
+            help="Adds a click listener to the itemView plus defines an interface for it."/>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe.xml.ftl"/>
+
+</template>
