@@ -1,6 +1,6 @@
 <template format="4"
           revision="1"
-          name="Architecture screen"
+          name="RainbowCake screen"
           description="Creates the required classes for a new screen - Fragment, ViewModel, ViewState and Presenter">
 
     <category value="Other"/>

@@ -1,7 +1,7 @@
 <template format="4"
           revision="1"
-          name="ListAdapter implementation"
-          description="Creates the required classes for a basic ListAdapter">
+          name="RainbowCake ListAdapter"
+          description="Creates the required classes for a basic ListAdapter implementation">
 
     <category value="Other"/>
 
