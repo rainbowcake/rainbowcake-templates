@@ -9,7 +9,7 @@ import hu.autsoft.rainbowcake.base.getViewModelFromFactory
 <#if fragmentArgument == true>
 import hu.autsoft.rainbowcake.extensions.requireLong
 import hu.autsoft.rainbowcake.extensions.requireArguments
-import hu.autsoft.rainbowcake.extensions.withArgs
+import hu.autsoft.rainbowcake.extensions.applyArgs
 </#if>
 import ${rootPackage}.R
 
@@ -33,7 +33,7 @@ class ${screenName}Fragment : BaseFragment<${screenName}ViewState, ${screenName}
 
         @Suppress("DEPRECATION")
         fun newInstance(someId: Long): ${screenName}Fragment {
-            return ${screenName}Fragment().withArgs {
+            return ${screenName}Fragment().applyArgs {
                 putLong(SOME_ID, someId)
             }
         }
