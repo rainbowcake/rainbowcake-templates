@@ -2,11 +2,13 @@
 
 This repository contains templates to generate boilerplate code for an Android application.
 
-### Screen template
+## Screen template
 
 Creates a new screen: Fragment, ViewModel, View state, and Presenter.
 
-#### Installation
+### Installation
+
+##### Basic installation
 
 Download the contents of this repository, and copy the `RainbowCakeScreenTemplate` folder to the following path:
 
@@ -20,7 +22,24 @@ For example, on Windows, this might be here by default:
 C:\Program Files\Android\Android Studio\plugins\android\lib\templates\other
 ```
 
-#### Usage
+This does have the issue of having to be removed during Android Studio updates, which can be solved by the other installation mode instead:
+
+##### Git cloned installation
+
+Clone the repository into your `<user>/.android/templates/other` directory, like such:
+
+```
+cd ~/.android/templates/other
+git clone [template repository path].git .
+```
+
+Then simply pull any updates to the templates via git:
+
+```
+git pull
+```
+
+### Usage
 
 Right click either on the `ui` package or any nested package inside the `ui` package. Choose `New -> Other -> RainbowCake screen`.
 
@@ -37,6 +56,6 @@ Click `Finish` to create the screen, and add the created files to Git:
 
 ![](/images/result.PNG)
 
-### ListAdapter template
+## ListAdapter template
 
 Generates a ListAdapter implementation plus a DiffUtil.Callback stub. Installation and usage same as above, found in the `RainbowCakeListAdapterTemplate` folder of this repository.
