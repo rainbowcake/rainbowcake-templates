@@ -4,19 +4,19 @@
 
 import android.os.Bundle
 import android.view.View
-import hu.autsoft.rainbowcake.base.BaseFragment
-import hu.autsoft.rainbowcake.base.getViewModelFromFactory
+import co.zsmb.rainbowcake.base.getViewModelFromFactory
+import co.zsmb.rainbowcake.base.RainbowCakeFragment
 <#if fragmentArgument == true>
-import hu.autsoft.rainbowcake.extensions.requireLong
-import hu.autsoft.rainbowcake.extensions.requireArguments
-import hu.autsoft.rainbowcake.extensions.applyArgs
+import co.zsmb.rainbowcake.extensions.applyArgs
+import co.zsmb.rainbowcake.extensions.requireLong
+import co.zsmb.rainbowcake.extensions.requireArguments
 </#if>
 import ${rootPackage}.R
 
 <#if fragmentArgument == true>
-class ${screenName}Fragment : BaseFragment<${screenName}ViewState, ${screenName}ViewModel> {
+class ${screenName}Fragment : RainbowCakeFragment<${screenName}ViewState, ${screenName}ViewModel> {
 <#else>
-class ${screenName}Fragment : BaseFragment<${screenName}ViewState, ${screenName}ViewModel>() {
+class ${screenName}Fragment : RainbowCakeFragment<${screenName}ViewState, ${screenName}ViewModel>() {
 </#if>
 
     override fun provideViewModel() = getViewModelFromFactory()
