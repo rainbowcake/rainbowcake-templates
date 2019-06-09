@@ -8,9 +8,30 @@ Creates a new screen: Fragment, ViewModel, View state, and Presenter.
 
 ### Installation
 
-##### Basic installation
+##### Git cloned installation
 
-Download the contents of this repository, and copy the `RainbowCakeScreenTemplate` folder to the following path:
+Clone the repository into your `<user>/.android/templates/other` directory, like such (mind the `.` after the second command):
+
+```
+cd ~/.android/templates/other
+git clone [template repository path].git .
+```
+
+The `cd` command on Windows might look like this instead, on a classic command prompt:
+
+```
+cd %HOMEPATH%/.android/templates/other
+```
+
+Whenever there's an update, you can then simply pull the templates via git:
+
+```
+git pull
+```
+
+##### Old, deprecated, manual installation method
+
+Download the contents of this repository, and copy the `RainbowCakeScreenTemplate` and `RainbowCakeListAdapterTemplate` folders to the following path:
 
 ```
 <YOUR_INSTALL_PATH>\Android Studio\plugins\android\lib\templates\other
@@ -23,21 +44,6 @@ C:\Program Files\Android\Android Studio\plugins\android\lib\templates\other
 ```
 
 This does have the issue of having to be removed during Android Studio updates, which can be solved by the other installation mode instead:
-
-##### Git cloned installation
-
-Clone the repository into your `<user>/.android/templates/other` directory, like such:
-
-```
-cd ~/.android/templates/other
-git clone [template repository path].git .
-```
-
-Then simply pull any updates to the templates via git:
-
-```
-git pull
-```
 
 ### Usage
 
@@ -58,4 +64,4 @@ Click `Finish` to create the screen, and add the created files to Git:
 
 ## ListAdapter template
 
-Generates a ListAdapter implementation plus a DiffUtil.Callback stub. Installation and usage same as above, found in the `RainbowCakeListAdapterTemplate` folder of this repository.
+Generates a ListAdapter implementation plus a `DiffUtil.Callback` stub. Installation and usage same as above, found in the `RainbowCakeListAdapterTemplate` folder of this repository.
