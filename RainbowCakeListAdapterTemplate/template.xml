@@ -20,6 +20,13 @@
             help="Adds a click listener to the itemView plus defines an interface for it."/>
 
     <parameter
+        id="useAndroidX"
+        name="Use AndroidX"
+        type="boolean"
+        default="false"
+        help="Use AndroidX imports instead of the support library imports."/>
+
+    <parameter
             id="presenterName"
             name="Presenter"
             type="string"

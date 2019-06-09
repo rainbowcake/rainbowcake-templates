@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<#if useAndroidX == true>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<#else>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+</#if>
      xmlns:app="http://schemas.android.com/apk/res-auto"
      android:id="@+id/${screenName?uncap_first}FragmentRoot"
      android:layout_width="match_parent"
@@ -14,4 +18,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+<#if useAndroidX == true>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<#else>
 </android.support.constraint.ConstraintLayout>
+</#if>

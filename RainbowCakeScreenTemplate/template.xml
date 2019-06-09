@@ -28,6 +28,22 @@
             default="false"
             help="Adds a dummy argument and a newInstance factory method for your Fragment."/>
 
+    <parameter
+        id="useAndroidX"
+        name="Use AndroidX"
+        type="boolean"
+        default="false"
+        help="Use AndroidX imports instead of the support library imports."/>
+
+    <parameter id="disolution"
+        name="Dependency injection method solution"
+        type="enum"
+        default="dagger"
+        help="The dependency injection solution being used in the project.">
+        <option id="dagger">Dagger 2</option>
+        <option id="koin">Koin 2.0</option>
+    </parameter>
+
     <globals file="globals.xml.ftl"/>
     <execute file="recipe.xml.ftl"/>
 

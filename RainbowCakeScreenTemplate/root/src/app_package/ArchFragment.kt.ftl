@@ -4,12 +4,17 @@
 
 import android.os.Bundle
 import android.view.View
-import co.zsmb.rainbowcake.base.getViewModelFromFactory
 import co.zsmb.rainbowcake.base.RainbowCakeFragment
+<#if disolution == 'dagger'>
+import co.zsmb.rainbowcake.dagger.getViewModelFromFactory
+</#if>
 <#if fragmentArgument == true>
 import co.zsmb.rainbowcake.extensions.applyArgs
 import co.zsmb.rainbowcake.extensions.requireLong
 import co.zsmb.rainbowcake.extensions.requireArguments
+</#if>
+<#if disolution == 'koin'>
+import co.zsmb.rainbowcake.koin.getViewModelFromFactory
 </#if>
 import ${rootPackage}.R
 

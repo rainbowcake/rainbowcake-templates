@@ -2,11 +2,17 @@
     package ${packageName}
 </#if>
 
+<#if useAndroidX == false>
 import android.support.v7.recyclerview.extensions.ListAdapter
 import android.support.v7.widget.RecyclerView
+</#if>
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+<#if useAndroidX == true>
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+</#if>
 import ${rootPackage}.R
 <#if presenterName?has_content>
 import ${packageName}.${presenterName}.${modelName}
