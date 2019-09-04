@@ -43,7 +43,7 @@ For example, on Windows, this might be here by default:
 C:\Program Files\Android\Android Studio\plugins\android\lib\templates\other
 ```
 
-This does have the issue of having to be removed during Android Studio updates, which can be solved by the other installation mode instead:
+This does have the issue of having to be removed during Android Studio updates, which can be solved by the other installation mode mentioned above.
 
 ### Usage
 
