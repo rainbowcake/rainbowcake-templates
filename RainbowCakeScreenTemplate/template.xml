@@ -36,7 +36,7 @@
         help="Use AndroidX imports instead of the support library imports."/>
 
     <parameter id="disolution"
-        name="Dependency injection method solution"
+        name="Dependency injection framework"
         type="enum"
         default="dagger"
         help="The dependency injection solution being used in the project.">
