@@ -32,7 +32,7 @@
         id="useAndroidX"
         name="Use AndroidX"
         type="boolean"
-        default="false"
+        default="true"
         help="Use AndroidX imports instead of the support library imports."/>
 
     <parameter id="disolution"
