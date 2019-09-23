@@ -15,7 +15,7 @@
     <parameter id="viewstatetype"
                name="ViewState type"
                type="enum"
-               default="data"
+               default="sealed"
                help="The ViewState type to use for the screen.">
         <option id="data">Data class</option>
         <option id="sealed">Sealed class</option>
