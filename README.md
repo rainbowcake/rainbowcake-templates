@@ -2,6 +2,8 @@
 
 This repository contains templates to generate boilerplate code for an Android application.
 
+>**Note:** these templates are unfortunately not up-to-date for Android Studio 4.0 yet.
+
 ## Screen template
 
 Creates a new screen: Fragment, ViewModel, View state, and Presenter.
