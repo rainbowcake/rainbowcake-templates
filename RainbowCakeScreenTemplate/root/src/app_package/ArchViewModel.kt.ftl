@@ -2,7 +2,7 @@
     package ${packageName}.${screenName?lower_case}
 </#if>
 
-import co.zsmb.rainbowcake.base.JobViewModel
+import co.zsmb.rainbowcake.base.RainbowCakeViewModel
 <#if disolution == 'dagger'>
 import javax.inject.Inject
 </#if>
@@ -14,9 +14,9 @@ class ${screenName}ViewModel(
 </#if>
         private val ${screenName?uncap_first}Presenter: ${screenName}Presenter
 <#if viewstatetype == 'data'>
-) : JobViewModel<${screenName}ViewState>(${screenName}ViewState()) {
+) : RainbowCakeViewModel<${screenName}ViewState>(${screenName}ViewState()) {
 <#elseif viewstatetype == 'sealed'>
-) : JobViewModel<${screenName}ViewState>(Loading) {
+) : RainbowCakeViewModel<${screenName}ViewState>(Initial) {
 </#if>
 
     fun load() = execute {

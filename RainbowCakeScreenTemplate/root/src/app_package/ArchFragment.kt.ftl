@@ -9,9 +9,8 @@ import co.zsmb.rainbowcake.base.RainbowCakeFragment
 import co.zsmb.rainbowcake.dagger.getViewModelFromFactory
 </#if>
 <#if fragmentArgument == true>
-import co.zsmb.rainbowcake.extensions.applyArgs
-import co.zsmb.rainbowcake.extensions.requireLong
-import co.zsmb.rainbowcake.extensions.requireArguments
+import co.zsmb.rainbowcake.navigation.extensions.applyArgs
+import co.zsmb.rainbowcake.navigation.extensions.requireLong
 </#if>
 <#if disolution == 'koin'>
 import co.zsmb.rainbowcake.koin.getViewModelFromFactory
