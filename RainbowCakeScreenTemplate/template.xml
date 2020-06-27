@@ -28,13 +28,6 @@
             default="false"
             help="Adds a dummy argument and a newInstance factory method for your Fragment."/>
 
-    <parameter
-        id="useAndroidX"
-        name="Use AndroidX"
-        type="boolean"
-        default="true"
-        help="Use AndroidX imports instead of the support library imports."/>
-
     <parameter id="disolution"
         name="Dependency injection framework"
         type="enum"
