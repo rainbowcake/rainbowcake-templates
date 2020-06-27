@@ -12,7 +12,9 @@ Creates a new screen: Fragment, ViewModel, View state, and Presenter.
 
 ##### Git cloned installation
 
-Clone the repository into your `<user>/.android/templates/other` directory, like such (mind the `.` after the second command):
+>**Note**: this method is unfortunately broken as of Android Studio 4. Please use the older install method described below, in the next section.
+
+Clone the repository into your `<user>/.android/templates/other` directory (might not exist by default), like such (mind the `.` after the second command):
 
 ```
 cd ~/.android/templates/other
@@ -36,7 +38,7 @@ git pull
 Download the contents of this repository, and copy the `RainbowCakeScreenTemplate` and `RainbowCakeListAdapterTemplate` folders to the following path:
 
 ```
-<YOUR_INSTALL_PATH>\Android Studio\plugins\android\lib\templates\other
+<YOUR_STUDIO_INSTALL_PATH>\plugins\android\lib\templates\other
 ```
 
 For example, on Windows, this might be here by default:
@@ -45,11 +47,17 @@ For example, on Windows, this might be here by default:
 C:\Program Files\Android\Android Studio\plugins\android\lib\templates\other
 ```
 
+Or roughly here, if you're using JetBrains Toolbox:
+
+```
+C:\Users\<USER_NAME>\AppData\Local\JetBrains\Toolbox\apps\AndroidStudio\ch-<CHANNEL_NUMBER>\<VERSION>\plugins\android\lib\templates\other
+```
+
 This does have the issue of having to be removed during Android Studio updates, which can be solved by the other installation mode mentioned above.
 
 ### Usage
 
-Right click either on the `ui` package or any nested package inside the `ui` package. Choose `New -> Other -> RainbowCake screen`.
+Right click either on the `ui` package or any nested package inside the `ui` package (hard requirement). Choose `New -> Other -> RainbowCake screen`.
 
 ![](/images/create_new.PNG)
 
